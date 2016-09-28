@@ -1,4 +1,4 @@
-(function(g, doc) {
+(function(doc) {
     var textArea = doc.getElementById("codeinput"),
         charEle = doc.getElementById("charcount"),
         byteEle = doc.getElementById("bytecount"),
@@ -75,6 +75,9 @@
                     // character is '|'
                     } else if (chr === '|') {
                         if ((!output.length || /[\n ]/.test(prevChr)) && (!nextChr.length || /[\n ]/.test(nextChr))) {
+                            if (prevChr === ' ') {
+                                output.pop();
+                            }
                             output.push('\n');
                         } else {
                             output.push('|');
@@ -100,4 +103,4 @@
         textArea.onkeyup = null ;
         count()
     }
-}(window, document));
+}(document));
