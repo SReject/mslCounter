@@ -1,0 +1,129 @@
+@media (min-width:62em) {
+    html{
+        font-size:1.2em;
+        background:#c4c4c4;
+        height:100%
+    }
+    body{
+        margin:0 auto;
+        padding:0 2em;
+        min-height:100%;
+        background:#fff;
+        border:solid #aaa;
+        border-width:0 1px
+    }
+    div.wrapper {
+        margin: 2em;
+        margin-bottom: 0;
+        padding-bottom: 2em;
+    }
+    div.group {
+        margin-left: 2em;
+    }
+}
+html, textarea {
+    font:1em/1.6 sans-serif
+}
+body {
+    max-width:60em;
+    padding:0 1em
+}
+h1 {
+    text-align:center;
+    font-size:2em;
+    margin:0 0 .5em;
+    padding-top:1em
+}
+a, a:visited {
+    color:#333;
+    text-decoration:none;
+    border-bottom:1px solid #aaa;
+    padding:.1em .2em
+}
+a:hover, a:focus {
+    color:#fff;
+    border-color:#036;
+    background:#36c
+}
+code {
+    font-family: Monaco, Consolas, monospace;
+    font-size:.9em;
+    white-space:pre;
+    white-space:pre-wrap;
+    word-wrap:break-word
+}
+
+textarea {
+    font-family: Monaco, Consolas, monospace;
+    background:#eee;
+    width:100%;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    display:block;
+    margin:1em 0 .5em;
+    margin-top: 0px;
+    padding:.7em;
+    resize:vertical;
+    min-height:10em;
+    border: 1px solid black;
+}
+
+div.counter {
+    display: flex;
+    border: 1px solid black;
+    border-bottom: 0px;
+    background:#e0e0e0;
+}
+div.counter > div {
+    display: flex;
+    flex: 1;
+    padding: 5px;
+}
+div.counter > div:first-child {
+    border-right: 1px solid black;
+}
+
+div.counter > div > div {
+    flex: 1;
+}
+div.counter div.title {
+    font-weight: bold;
+}
+div.counter div.count {
+    text-align: right;
+}
+div.group {
+    margin-bottom: 2em;
+}
+div.group,
+div.group > div.items,
+div.group > div.notes {
+    margin-left: 1em;
+}
+
+div.group > div.title {
+    font-weight: bold;
+}
+
+code {
+    background-color: rgba(0,0,0, .15);
+    padding: 2px 5px;
+}
+div.notes {
+    font-size: .9em;
+    margin-top: .5em;
+}
+div.notes > div.note {
+    display: flex;
+}
+div.notes > div.note > div {
+    flex: 1;
+}
+div.notes > div.note > div:first-child {
+    flex: 0;
+}
+sup {
+    opacity: .6;
+    font-size: .75em;
+}
