@@ -23,14 +23,13 @@
         <div class="group">
             <div class="title">Rules</div>
             <div class="items">
-                <div class="item">Spaces<sup>1</sup> at the beginning of lines are not counted</div>
-                <div class="item">Spaces<sup>1</sup> at the end of lines are not counted</div>
+                <div class="item">Spaces<sup>1</sup> at the beginning and end of lines are not counted</div>
                 <div class="item">Repeated spaces<sup>1</sup> are counted as a single character and byte</div>
                 <div class="item">Line breaks<sup>2</sup> are counted as a single character and byte</div>
                 <div class="item">Repeated line breaks<sup>2</sup> are counted as a single character and byte</div>
                 <div class="item">Repeated spaces<sup>1</sup> and/or line breaks<sup>2</sup> are counted as a single character and byte</div>
-                <div class="item">Lines prefixed<sup>3</sup> with "<code>;</code>" are not counted</div>
-                <div class="item">Command seperating pipes<sup>4</sup> are treated as a single character and byte</div>
+                <div class="item">Command seperating pipes<sup>3</sup> are counted as a single character and byte</div>
+                <div class="item">Lines prefixed<sup>4</sup> with "<code>;</code>" are not counted</div>
             </div>
         </div>
         <div class="group">
@@ -38,8 +37,8 @@
             <div class="notes">
                 <div class="note"><div><sup>1</sup>:</div><div>Only the ascii character 32 is considered a space</div></div>
                 <div class="note"><div><sup>2</sup>:</div><div>Only the ascii characters 13(carriage return) and 10(line feed) are considered line break characters</div></div>
-                <div class="note"><div><sup>3</sup>:</div><div>Leading spaces are ignored when searching for a prefix</div></div>
-                <div class="note"><div><sup>4</sup>:</div><div>Command seperating pipes are any occurance of a space or line break followed by <code>|</code> followed by space or line break</div></div>
+                <div class="note"><div><sup>3</sup>:</div><div>Command seperating pipes are any occurance of a space or line break followed by <code>|</code> followed by space or line break</div></div>
+                <div class="note"><div><sup>4</sup>:</div><div>Leading spaces are ignored when searching for a prefix</div></div>
             </div>
         </div>
         <div class="group">
